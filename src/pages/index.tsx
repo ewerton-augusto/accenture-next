@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 import Seo from '../components/Seo';
 import { Container } from '../styles/pages/Home/style';
-import HeaderComponent from '../components/Header';
 
 const ModalContent = dynamic(
   () => import('../components/Modal'),
@@ -22,7 +21,6 @@ export default function Home() {
   return (
     <>
       <Seo title="Fala galera" description="Seja bem vindo e blá" />
-      <HeaderComponent />
       <Container>
         <Image src="/img/logo.png" height={80} width={200}/>
         <h1>Hello NextJS</h1>
